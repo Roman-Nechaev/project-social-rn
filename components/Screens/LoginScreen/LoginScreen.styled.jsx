@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
   text: {
     marginTop: 32,
     marginBottom: 32,
-    fontWeight: 500,
+    // fontWeight: 500,
     fontSize: 30,
     lineHeight: 35,
     textAlign: 'center',

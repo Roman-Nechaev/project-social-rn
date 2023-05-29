@@ -11,6 +11,8 @@ import LoginScreen from './components/Screens/LoginScreen/LoginScreen';
 
 const MainStack = createStackNavigator();
 
+import { Text, View } from 'react-native';
+
 export default function App() {
   return (
     <NavigationContainer>

@@ -64,7 +64,6 @@ export default function LoginScreen() {
   const onLogin = () => {
     setIsShowKeyboard(false);
 
-    console.log(state);
     setState(initialState);
   };
 

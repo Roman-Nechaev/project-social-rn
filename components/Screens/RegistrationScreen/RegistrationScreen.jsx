@@ -21,9 +21,9 @@ import avatarDefault from '../../../assets/avatar-default.png';
 
 import addIcon from '../../../assets/icons/addIcon.png';
 import delAvatarIcon from '../../../assets/icons/dellIcon.png';
-console.log(delAvatarIcon);
+
 import { styles } from './RegistrationScreen.styled';
-console.log(styles);
+
 const initialState = {
   name: '',
   email: '',
@@ -53,6 +53,7 @@ export default function RegistrationScreen() {
     const showSubscription = Keyboard.addListener('keyboardDidShow', e =>
       setKeyboardHeight(e.endCoordinates.height)
     );
+
     const hideSubscription = Keyboard.addListener('keyboardWillHide', () =>
       setKeyboardHeight(0)
     );
@@ -73,7 +74,6 @@ export default function RegistrationScreen() {
 
   const onLogin = () => {
     setIsShowKeyboard(false);
-
     console.log(state);
     setState(initialState);
   };
@@ -103,6 +103,7 @@ export default function RegistrationScreen() {
       setAvatar(avatar);
       return;
     }
+
     setAvatar(avatarDefault);
     setIconAdd(addIcon);
   };
